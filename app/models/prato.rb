@@ -3,7 +3,7 @@ class Prato < ActiveRecord::Base
 	validates_uniqueness_of :nome, :message => " - já cadastrado"	
 	
 	belongs_to :prato
-	validates :validar_presenca_de_varios_restaurantes
+	validate :validar_presenca_de_varios_restaurantes
 	
 	private
 	def validar_presenca_de_varios_restaurantes
