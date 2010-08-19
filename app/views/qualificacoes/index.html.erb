@@ -1,4 +1,4 @@
-<h1>Listing qualificacoes</h1>
+<%= render :partial => "titulo" %>
 
 <table>
   <tr>
@@ -6,6 +6,7 @@
     <th>Restaurante</th>
     <th>Nota</th>
     <th>Valor gasto</th>
+		<th></th>
   </tr>
 
 <% @qualificacoes.each do |qualificacao| %>
@@ -14,12 +15,12 @@
     <td><%=h qualificacao.restaurante.nome %></td>
     <td><%=h qualificacao.nota %></td>
     <td><%=h valor_formatado(qualificacao.valor_gasto) %></td>
-    <td><%= link_to 'Exibir', qualificacao, :class => "show", :title => "Exibir detalhes" %></td>
-    <td><%= link_to 'Editar', edit_qualificacao_path(qualificacao), :class => "edit", :title => "Editar" %></td>
+    <td><%= link_to 'Exibir', qualificacao, :class => "show", :title => "Exibir detalhes" %>
+    		<%= link_to 'Editar', edit_qualificacao_path(qualificacao), :class => "edit", :title => "Editar" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New qualificacao', new_qualificacao_path %>
+<%= link_to 'Nova qualificação', new_qualificacao_path %>

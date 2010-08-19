@@ -1,17 +1,18 @@
-<h1>Listing clientes</h1>
+<%= render :partial => "titulo" %>
 
 <table>
   <tr>
     <th>Nome</th>
     <th>Idade</th>
+		<th></th>
   </tr>
 
 <% @clientes.each do |cliente| %>
   <tr>
     <td><%=h cliente.nome %></td>
     <td><%=h cliente.idade %></td>
-    <td><%= link_to 'Exibir', cliente, :class => "show", :title => "Exibir detalhes" %></td>
-    <td><%= link_to 'Editar', edit_cliente_path(cliente), :class => "edit", :title => "Editar" %></td>
+    <td><%= link_to 'Exibir', cliente, :class => "show", :title => "Exibir detalhes" %>
+    		<%= link_to 'Editar', edit_cliente_path(cliente), :class => "edit", :title => "Editar" %></td>
   </tr>
 <% end %>
 </table>

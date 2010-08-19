@@ -12,7 +12,7 @@
     <%= f.text_field :idade %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Criar' %>
   </p>
 <% end %>
 

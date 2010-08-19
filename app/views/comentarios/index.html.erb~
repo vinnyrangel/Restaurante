@@ -1,10 +1,11 @@
-<h1>Listing comentarios</h1>
+<%= render :partial => "titulo" %>
 
 <table>
   <tr>
     <th>Conteudo</th>
     <th>Comentavel</th>
     <th>Comentavel type</th>
+		<th></th>
   </tr>
 
 <% @comentarios.each do |comentario| %>
@@ -21,4 +22,4 @@
 
 <br />
 
-<%= link_to 'New comentario', new_comentario_path %>
+<%= link_to 'Novo comentário', new_comentario_path %>

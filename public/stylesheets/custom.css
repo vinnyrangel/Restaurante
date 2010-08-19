@@ -2,8 +2,10 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
-h1 {background:#99ee22; color:#fff; padding:10px}
+h1 {background:url('http://www.carnegiecourt.com/wp-content/themes/carnegie/images/header-restaurant.jpg') no-repeat left; color:#000; height:150px; padding:20px 20px}
+h1 span {background-color:#EEEE00; border-right:1px solid #ddaa00; border-bottom:1px solid #ddaa00; font-size:26px; font-family:Georgia, Tahoma, Times New Roman; padding:0 10px;}
 body>ul li {display:inline;margin:0 10px;}
+table {width:940px;}
 table th {background:#666; color:#fff; padding:5px; text-align:left;}
 table td {padding:5px}
 .edit {background:url('http://www.programanighttv.com.br/imagens/icones/edit.gif') no-repeat; padding:0 0 0 20px;}

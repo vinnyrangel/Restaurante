@@ -16,7 +16,7 @@
     <%= f.text_field :comentavel_type %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Atualizar' %>
   </p>
 <% end %>
 

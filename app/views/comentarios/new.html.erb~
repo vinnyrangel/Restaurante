@@ -10,7 +10,7 @@
 	<%= f.hidden_field :comentavel_type %>
   
 	<p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Criar' %>
   </p>
 <% end %>
 

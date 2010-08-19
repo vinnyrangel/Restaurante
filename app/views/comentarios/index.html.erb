@@ -1,10 +1,11 @@
-<h1>Listing comentarios</h1>
+<%= render :partial => "titulo" %>
 
 <table>
   <tr>
     <th>Conteudo</th>
     <th>Comentavel</th>
     <th>Comentavel type</th>
+		<th></th>
   </tr>
 
 <% @comentarios.each do |comentario| %>
@@ -12,9 +13,9 @@
     <td><%=h comentario.conteudo %></td>
     <td><%=h comentario.comentavel_id %></td>
     <td><%=h comentario.comentavel_type %></td>
-    <td><%= link_to 'Exibir', comentario, :class => "show", :title => "Exibir detalhes" %></td>
-    <td><%= link_to 'Editar', edit_comentario_path(comentario), :class => "edit", :title => "Editar" %></td>
-    <td><%= link_to 'Excluir', comentario, :confirm => 'Tem certeza?', :method => :delete, :class => "destroy", :title => "Excluir" %></td>
+    <td><%= link_to 'Exibir', comentario, :class => "show", :title => "Exibir detalhes" %>
+    <%= link_to 'Editar', edit_comentario_path(comentario), :class => "edit", :title => "Editar" %>
+    <%= link_to 'Excluir', comentario, :confirm => 'Tem certeza?', :method => :delete, :class => "destroy", :title => "Excluir" %></td>
   </tr>
 <% end %>
 </table>

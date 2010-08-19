@@ -14,9 +14,9 @@
 					<td><%=h restaurante.nome %></td>
 					<td><%=h restaurante.endereco %></td>
 					<td><%=h restaurante.especialidade %></td>
-					<td><%= link_to 'Show', {:action => 'show', :id => restaurante}, :class => "show", :title => "Exibir detalhes" %>
-						  <%= link_to 'Edit', {:action => 'edit', :id => restaurante}, :class => "edit", :title => "Editar" %>
-							<%= link_to 'Destroy', {:action => 'destroy', :id => restaurante} %></td>
+					<td><%= link_to 'Exibir', {:action => 'show', :id => restaurante}, :class => "show", :title => "Exibir detalhes" %>
+						  <%= link_to 'Editar', {:action => 'edit', :id => restaurante}, :class => "edit", :title => "Editar" %>
+							<%= link_to 'Excluir', {:action => 'destroy', :id => restaurante}, :class => "destroy", :title => "Excluir" %></td>
 				</tr>
 	<% end %>
 </table>
