@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cliente: 1
+  restaurante: 1
+  nota: 1.5
+  valor_gasto: 1.5
+
+two:
+  cliente: 1
+  restaurante: 1
+  nota: 1.5
+  valor_gasto: 1.5

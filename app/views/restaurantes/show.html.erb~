@@ -1,0 +1,27 @@
+<%= render :partial => "titulo" %>
+
+<p>
+	<b>Nome:</b>
+	<%=h @restaurante.nome %>
+</p>
+
+<p>
+	<b>Endereço:</b>
+	<%=h @restaurante.endereco %>
+</p>
+
+<p>
+	<b>Especialidade:</b>
+	<%=h @restaurante.especialidade %>
+</p>
+
+<%= link_to 'Editar', {:action => 'edit', :id => @restaurante}, :class => "edit", :title => "Editar" %>
+<%= link_to 'Back', {:action => 'index'} %>
+<%= link_to "Qualificar este restaurante", 	:controller => "qualificacoes",
+																						:action => "new",
+																						:restaurante => @restaurante %>
+<% unless @restaurante.comentarios.empty? %>
+	<%= comentarios @restaurante %>
+<% end %>
+
+<%= novo_comentario @restaurante %>

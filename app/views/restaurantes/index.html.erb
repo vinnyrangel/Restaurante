@@ -1,0 +1,27 @@
+<%= render :partial => "titulo" %>
+<% #"Teste de rota: Eu nasci no ano de #{@ano}" 
+%>
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Endereço</th>
+		<th>Especialidade</th>
+		<th></th>
+	</tr>
+
+	<% for restaurante in @restaurantes %>
+				<tr>
+					<td><%=h restaurante.nome %></td>
+					<td><%=h restaurante.endereco %></td>
+					<td><%=h restaurante.especialidade %></td>
+					<td><%= link_to 'Exibir', {:action => 'show', :id => restaurante}, :class => "show", :title => "Exibir detalhes" %>
+						  <%= link_to 'Editar', {:action => 'edit', :id => restaurante}, :class => "edit", :title => "Editar" %>
+							<%= link_to 'Excluir', {:action => 'destroy', :id => restaurante}, :class => "destroy", :title => "Excluir" %></td>
+				</tr>
+	<% end %>
+</table>
+
+<%= will_paginate @restaurantes %>
+
+<br />
+<%= link_to 'New', {:action => 'new'} %>

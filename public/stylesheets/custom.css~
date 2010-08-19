@@ -1,0 +1,11 @@
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+h1 {background:#99ee22; color:#fff; padding:10px}
+body>ul li {display:inline;margin:0 10px;}
+table th {background:#666; color:#fff; padding:5px; text-align:left;}
+.edit {background:url('http://www.programanighttv.com.br/imagens/icones/edit.gif') no-repeat; padding:0 0 0 20px;}
+.show {background:url('http://www.boarding-school-finder.com/img/view.png') no-repeat; padding:0 5px 0 20px;}
+.destroy {background:url('http://webmail.esagelink.com/webmail_images/blue/img/trash.gif') no-repeat; padding:0 5px 0 20px;}
+
